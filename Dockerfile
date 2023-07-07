@@ -4,5 +4,5 @@ WORKDIR /root/
 COPY . .
 RUN pip3.6 install -r requirements.txt
 
-EXPOSE 9118
+EXPOSE 9120
 ENTRYPOINT [ "/bin/bash",  "entrypoint.sh" ]

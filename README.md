@@ -21,7 +21,7 @@ docker build -t jenkins_exporter .
 ### Step 2: Run Jenkins exporter
 
 ```sh
-docker run -p 9118:9118 --name jenkins_exporter -d \
+docker run -p 9120:9120 --name jenkins_exporter -d \
 -e "JENKINS_SERVER=http://jenkins_server" \
 -e "JENKINS_USERNAME=example" \
 -e "JENKINS_PASSWORD=123456" jenkins_exporter
@@ -35,7 +35,7 @@ With:
 
 ### *Or using config file:*
 ```sh
-docker run -p 9118:9118 --name jenkins_exporter -d \
+docker run -p 9120:9120 --name jenkins_exporter -d \
 -v "/link/to/your/config/file.ini:/root/config.ini" \
 jenkins_exporter
 ```
