@@ -17,6 +17,6 @@ if __name__ == "__main__":
         passwd=config['DEFAULT']['JENKINS_PASSWORD']
     )
     REGISTRY.register(collector)
-    start_http_server(9120)
+    start_http_server(9145)
     while True:
         time.sleep(1)
